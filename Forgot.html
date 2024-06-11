@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 15%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text], input[type=password] {
+  background-color: #ddd;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+
+/* Float cancel and signup buttons and add an equal width */
+ .signupbtn {
+  float: center;
+  width: 15%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  text-align: center;
+  color: blanchedalmond;
+  font-size: larger;
+}
+
+/* Clear floats */
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 15%;
+  }
+}
+
+body{
+        background-image: url(for.jpg);
+        background-size: cover;
+    }
+</style>
+<body>
+
+<form action="loginform.html">
+  <div class="container">
+    <h1>Reset Ur Password</h1>
+
+    Email:
+    <input type="text" placeholder="Enetr Email" name="email" required> <br>
+
+   New Password:
+    <input type="password" placeholder="New Password" name="psw" required> <br>
+
+  Confirm Password:
+    <input type="password" placeholder="Confirm Password" name="psw-repeat" required> <br>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <br>
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">change Password</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>

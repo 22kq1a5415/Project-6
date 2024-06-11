@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+input[type=text], input[type=password]{
+  width: 20%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.imgcontainer{
+    text-align: center;
+    margin: 10px 0 4px 0;
+}
+
+img.avatar {
+  width: 10%;
+  border-radius: 10%;
+}
+
+.container {
+  text-align: center;
+  color: aqua;
+}
+span.psw {
+  float:center;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: ;
+     float: none;
+  }
+}
+
+body{
+        background-image: url(lo.jpg);
+        background-size: cover;
+    }
+</style>
+</head>
+<body>
+
+<form action="home1.html" method="post">
+ <div class="imgcontainer">
+    <img src="logo2.jpg" alt="" class="avatar">
+  </div>
+
+  <div class="container">
+
+    <h2>LOGIN FORM</h2> <br>
+    Username:
+    <input type="text" placeholder="Enter Username" name="uname" required> <br>
+
+    Password:
+    <input type="password" placeholder="Enter Password" name="psw" required> <br>
+        
+    <button type="submit">Login</button> <br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+<br>
+ <br> 
+<div class="container">
+    <span class="psw">Forgot <a href="Forgot.html">password?</a></span>
+  </div>
+</form>
+
+</body>
+</html>
